@@ -1,0 +1,153 @@
+/* Style sheet for the website */
+
+/* Define variables for colors */
+:root {
+    --bg-color: #f0f0f0;
+    --primary-color: #333333;
+    --secondary-color: #999999;
+    --accent-color: #ff9900;
+  }
+  
+  /* Reset default styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set global styles */
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+  }
+  
+  /* Style the header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+  }
+  
+  header h1 {
+    font-weight: 700;
+    font-size: 4vw;
+  }
+  
+  /* Style the main section */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 160px);
+  }
+  
+  /* Style the form */
+  form {
+    display: flex;
+  flex-wrap: wrap; /* Allow the elements to wrap to a new line if needed */
+  justify-content: center; /* Center the elements horizontally */
+  gap: 50px;
+  }
+  
+  .input {
+    width: calc(25% - 10px);
+  }
+  
+  #amount {
+    width: calc(50% - 10px);
+  }
+  
+  #btn-convert {
+    width: calc(25% - 10px);
+    background-color: #0099ff; /* A blue shade */
+    color: #ffffff; /* White */
+    font-weight: 700; /* Bold */
+    border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* A subtle shadow */
+  transition: all 0.3s ease; /* A smooth transition for all properties */
+  }
+
+  #btn-convert:hover {
+    transform: scale(1.1); /* Make the button slightly larger on hover */
+  }
+  
+  #btn-convert:active {
+    transform: scale(0.9); /* Make the button slightly smaller on click */
+  }
+  @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+  
+  input, select {
+    font-family: 'Noto Sans JP', sans-serif; /* A Japanese font */
+    background-color: #333333; /* A dark grey color */
+    color: #ffffff; /* A white color */
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: inset 0px -2px var(--secondary-color); /* A subtle shadow */
+    transition: all 0.3s ease; /* A smooth transition for all properties */
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+  }
+  
+  select {
+    appearance: none;
+  }
+  
+  select::-ms-expand {
+      display:none; /* hide default arrow in IE */
+  }
+  
+  select::after {
+      content:"\f078"; /* FontAwesome Unicode */
+      font-family:"Font Awesome";
+      position:absolute; /* position icon */
+      right:.5em;} /* icon
+
+
+    
+
+      /* Style for screens larger than 768px */
+@media (min-width: 768px) {
+    /* Your styles here */
+  }
+  
+  /* Style for screens smaller than 768px */
+  @media (max-width: 767px) {
+    .input {
+        width: calc(50% - 10px);
+      }
+    
+      #amount {
+        width: calc(100% - 10px);
+      }
+    
+      #btn-convert {
+        width: calc(50% - 10px);
+      }
+  }
+
+  #result {
+    background-color: #ccf2ff; /* A light blue shade */
+    font-size: 24px; /* A larger font size */
+  font-weight: 700; /* A bold font weight */
+  padding: 20px; /* Some space inside the paragraph */
+  margin: 20px; /* Some space outside the paragraph */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* A subtle shadow */
+  transition: all 0.3s ease; /* A smooth transition for all properties */
+  }
+
+  #result:hover {
+    transform: scale(1.1); /* Make the paragraph slightly larger on hover */
+  }
+
+
+  
